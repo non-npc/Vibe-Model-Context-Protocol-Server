@@ -1,6 +1,6 @@
 # Vibe Model Context Protocol Server (VMCPS)
 
-A Python-based server for managing and analyzing code context for AI-assisted development, similar to Giga AI.
+A Python-based server for managing and analyzing code context for AI-assisted development.
 
 ## Features
 
