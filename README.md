@@ -53,11 +53,26 @@ pip install -r requirements.txt
 - Copy `.env.example` to `.env`
 - Update the values in `.env` as needed
 
-## Usage
+## Example API Usage (curl commands)
 
-1. Start the server:
+Start the server:
 ```bash
 python -m mcps.main
+```
+
+1. Get token:
+```bash
+curl -X POST "http://localhost:8000/token" -H "Content-Type: application/x-www-form-urlencoded" -d "username=admin&password=admin"
+```
+
+2. Analyze project (replace <token> with actual token):
+```bash
+curl -X POST "http://localhost:8000/analyze" -H "Authorization: Bearer <token>" -H "Content-Type: application/json" -d '{"project_path": "/path/to/your/project"}'
+```
+
+3. Get context:
+```bash
+curl -X GET "http://localhost:8000/context" -H "Authorization: Bearer <token>"
 ```
 
 2. Access the API:
