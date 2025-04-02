@@ -15,6 +15,21 @@ A Python-based server for managing and analyzing code context for AI-assisted de
 - Dependency tracking
 - Cross-platform support (Windows, Linux, macOS)
 
+## API Endpoints
+
+- `POST /token` - Get authentication token
+- `POST /analyze` - Analyze a project
+- `GET /context` - Get context for a file or project
+- `GET /dependencies` - Get project dependencies
+- `GET /structure` - Get project structure
+
+## Security
+
+- JWT-based authentication
+- Password hashing with bcrypt
+- CORS protection
+- Environment-based configuration
+
 ## Installation
 
 1. Clone the repository:
@@ -48,21 +63,6 @@ python -m mcps.main
 2. Access the API:
 - The server will be running at `http://localhost:8000`
 - API documentation is available at `http://localhost:8000/docs`
-
-## API Endpoints
-
-- `POST /token` - Get authentication token
-- `POST /analyze` - Analyze a project
-- `GET /context` - Get context for a file or project
-- `GET /dependencies` - Get project dependencies
-- `GET /structure` - Get project structure
-
-## Security
-
-- JWT-based authentication
-- Password hashing with bcrypt
-- CORS protection
-- Environment-based configuration
 
 ## Development
 
