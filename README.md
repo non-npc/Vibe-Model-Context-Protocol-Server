@@ -34,7 +34,7 @@ A Python-based server for managing and analyzing code context for AI-assisted de
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/non-npc/Vibe-Model-Context-Protocol-Server.git
 cd mcps
 ```
 
