@@ -75,7 +75,7 @@ curl -X POST "http://localhost:8000/analyze" -H "Authorization: Bearer <token>" 
 curl -X GET "http://localhost:8000/context" -H "Authorization: Bearer <token>"
 ```
 
-2. Access the API:
+Access the API:
 - The server will be running at `http://localhost:8000`
 - API documentation is available at `http://localhost:8000/docs`
 
